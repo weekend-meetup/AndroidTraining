@@ -21,4 +21,14 @@
         android:background="@drawable/main_button"
         android:clickable="true"/>
 
+        <ImageView
+            android:id="@+id/droid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/main_button"
+            android:src="@drawable/ic_launcher"
+            android:visibility="invisible"
+
+        />
+
 </RelativeLayout>
