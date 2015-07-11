@@ -7,12 +7,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-public class MainActivity extends Activity {
+/**
+ * Created by Keita on 2015/07/11.
+ */
+public class SubActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sub);
         View view = findViewById(R.id.main_button);
         view.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -20,15 +23,24 @@ public class MainActivity extends Activity {
                 onClickButton();
             }
         });
+
+        View view2 = findViewById(R.id.main_button2);
+        view2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onClickButton2();
+            }
+        });
     }
 
     private void onClickButton() {
+        finish();
+    }
+    private void onClickButton2() {
 
-        Log.e(MainActivity.class.getCanonicalName(),"Test");
-        Intent intent = new Intent(this, SubActivity.class);
-        startActivity(intent);
-        /*
-        getResources().getString(R.string.main_button_text)
-         */
+        AlertDialog.Builder d = new AlertDialog.Builder(this);
+        d.setMessage("開発中！");
+        d.create().show();
+
     }
 }

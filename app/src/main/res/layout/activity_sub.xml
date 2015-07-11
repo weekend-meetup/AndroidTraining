@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@android:color/holo_red_dark"
+    android:weightSum="1"
+    android:gravity="center">
+
+    <!-- 真ん中のボタン -->
+    <TextView
+        android:id="@+id/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="戻る"
+        android:background="@drawable/main_button"
+        android:clickable="true"/>
+
+    <!-- 真ん中のボタン -->
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_margin="30dp" />
+
+    <TextView
+        android:id="@+id/main_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="このアプリを評価してください"
+        android:background="@drawable/main_button"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

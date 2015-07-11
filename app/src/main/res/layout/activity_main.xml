@@ -17,7 +17,7 @@
         android:textSize="20sp"
         android:padding="10dp"
         android:textColor="@android:color/darker_gray"
-        android:text="@string/main_button_text"
+        android:text="血に塗られた世界へ"
         android:background="@drawable/main_button"
         android:clickable="true"/>
 
